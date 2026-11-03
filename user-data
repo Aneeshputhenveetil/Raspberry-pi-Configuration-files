@@ -1,0 +1,14 @@
+# only edit the hostnae, name, YOUR_LOGIN_PASSWORD.
+
+hostname: raspberrypi
+manage_etc_hosts: true
+
+users:
+  - name: pi
+    groups: users,adm,dialout,audio,netdev,video,plugdev,cdrom,games,input,gpio,spi,i2c,render,sudo
+    shell: /bin/bash
+    lock_passwd: false
+    plain_text_passwd: "YOUR_LOGIN_PASSWORD"
+
+enable_ssh: true
+ssh_pwauth: true
