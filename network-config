@@ -1,0 +1,14 @@
+#Only edit the YOUR_WIFI_SSID and YOUR_WIFI_PASSWORD.
+
+
+network:
+  version: 2
+  renderer: NetworkManager
+  wifis:
+    wlan0:
+      dhcp4: true
+      regulatory-domain: "IN"
+      access-points:
+        "YOUR_WIFI_SSID":
+          password: "YOUR_WIFI_PASSWORD"
+      optional: true
